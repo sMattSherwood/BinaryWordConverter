@@ -1,0 +1,18 @@
+.textBoxContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+.userInput{
+    display: flex;
+}
+.binaryOutput{
+    display: flex;
+}
+.userInput textarea{
+    padding-left: 3%;
+}
+.binaryOutput textarea{
+    padding-left: 3%
+}

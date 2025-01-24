@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Binary number and word generator</h1>
+    <p>In the world of computers there are standards such as ASCII or UTF that allow words to be understood through the computer using a compiler which takes characters and translates them into
+        1's or 0's. this application will use UTF-8 which is 8 bits of 1's 11111111. In UTF-8 characters and symbols has a number associated with it those numbers are then converted into binary for 
+        the computer to read.
+    </p>
+    <div class="textBoxContainer">
+        <div class="userInput">
+            <textarea name="input" id="input" placeholder="User Input"  rows="4" cols="50"></textarea>
+        </div>
+        <div class="binaryOutput">
+            <textarea name="output" id="output" placeholder="Binary Output"  rows="4" cols="50" readonly></textarea> <!--this text area will only have output no way of inputing-->
+        </div>
+    </div>
+    <script src="functionality.js"></script>
+</body>
+</html>
