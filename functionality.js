@@ -30,6 +30,9 @@ function arraySorter(array){
 function binaryConversion(input){
     let inputAnswer = '';
     switch(input){
+        case ' ':
+            inputAnswer = '00100000'
+            break;
         case '!': 
             inputAnswer = '00100001';
             break;

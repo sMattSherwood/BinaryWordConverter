@@ -1,6 +1,85 @@
+/*Fonts*/
+/*This font will be for titles Proxima Nova*/
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(./fonts/Proxima\ Nova\ Alt\ Condensed\ Bold\ Italic.otf);
+}
+/*This font can be used for pargraphs*/
+@font-face {
+    font-family: 'proximaNovaThin';
+    src: url(./fonts/Proxima\ Nova\ Alt\ Thin\ Italic.otf);
+}
+/*This font will look like 90's windows terminal font*/
+@font-face{
+    font-family: 'oldWindows';
+    src: url(./fonts/that_old__90s_computer_font_by_thebitchisback420_ddbqpfn.ttf);
+}
+/*code fonts*/
+@font-face {
+    font-family: 'terminal';
+    src: url(./fonts/Cascadia.ttf);
+}
+body{
+    background-color: black;
+}
+p{
+    color: rgb(0, 190, 0);
+    width: 40%;
+    padding-left: 5%;
+    font-size: 2.5ch;
+    font-family: 'proximaNovaThin';
+    user-select: none;
+}
+#info{
+    opacity: 0;
+    
+    transition: opacity 0.7s ease-in-out;
+    
+}
+#info.fadeIn{
+    opacity: 1;
+    
+    
+}
+
+.explanation{
+    display: flex;
+    justify-content: center;
+    
+}
+.explanation button{
+    height: 90%;
+    width: 12%;
+    border-radius: 40px;
+    border-width: 2px 4px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    color: green;
+    background-color: black;
+    font-size: 2.5ch;
+    margin-top: 1%;
+    padding: 1%;
+    transition: background-color 1s, border-color 0.17s;
+    cursor: pointer;
+}
+.explanation button:hover{
+    background-color: rgb(16, 6, 39);
+    
+}
+.explanation button:active{
+    border-color: green;
+}
+
+h1{
+    color: rgb(0,190,0);
+    font-family: 'oldWindows';
+    padding-left: 1%;
+    font-size: 8ch;
+}
 .textBoxContainer{
     display: flex;
     flex-direction: row;
+    padding-top: 1%;
     gap: 10%;
     justify-content: center;
 }
@@ -10,9 +89,52 @@
 .binaryOutput{
     display: flex;
 }
+/*This is the first text box where data is stored*/
 .userInput textarea{
+    resize: none;
+    font-size: 2ch;
+    outline: black;
+    padding-top: 2%;
     padding-left: 3%;
+    border-radius: 2%;
+    border-style: solid;
+    border-color: rgb(95, 34, 131);
+    border-width: 4px;
+    background-color: rgb(16, 6, 39);
+    color: rgb(0, 190, 0);
+    transition: border-color 1s;
+    font-family: terminal;
 }
+
+/*when mouse hovers over the text box*/
+.userInput textarea:hover{
+    border-color: green;
+}
+.userInput textarea::placeholder{
+    color:green;
+}
+/*This is where the binary will be outputed*/
 .binaryOutput textarea{
-    padding-left: 3%
+    resize: none;
+    outline: black;
+    font-size: 2ch;
+    padding-top: 2%;
+    padding-left: 3%;
+    border-radius: 2%;
+    border-width: 4px;
+    border-color: rgb(95, 34, 131);
+    background-color: rgb(16, 6, 39);
+    color: rgb(0, 190, 0);
+    transition: border-color 1s;
+    font-family: terminal;
 }
+
+.binaryOutput textarea:hover{
+    border-color: green;
+}
+
+.binaryOutput textArea::placeholder{
+    color:green;
+}
+
+
