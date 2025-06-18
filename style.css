@@ -26,13 +26,12 @@ p{
     color: rgb(0, 190, 0);
     width: 40%;
     padding-left: 5%;
-    font-size: 2.5ch;
+    font-size: 2.5vh;
     font-family: 'proximaNovaThin';
     user-select: none;
 }
 #info{
     opacity: 0;
-    
     transition: opacity 0.7s ease-in-out;
     
 }
@@ -63,7 +62,7 @@ p{
     cursor: pointer;
 }
 .explanation button:hover{
-    background-color: rgb(16, 6, 39);
+    background-color: rgb(40, 13, 102);
     
 }
 .explanation button:active{
@@ -74,7 +73,9 @@ h1{
     color: rgb(0,190,0);
     font-family: 'oldWindows';
     padding-left: 1%;
-    font-size: 8ch;
+    font-size: 5vh;
+    display: flex;
+    flex-shrink: 1;
 }
 .textBoxContainer{
     display: flex;
@@ -104,6 +105,8 @@ h1{
     color: rgb(0, 190, 0);
     transition: border-color 1s;
     font-family: terminal;
+    height: 100%;
+    width: 100%;
 }
 
 /*when mouse hovers over the text box*/
@@ -127,6 +130,8 @@ h1{
     color: rgb(0, 190, 0);
     transition: border-color 1s;
     font-family: terminal;
+    height: 100%;
+    width: 100%;
 }
 
 .binaryOutput textarea:hover{
@@ -137,4 +142,18 @@ h1{
     color:green;
 }
 
+/*Media quries*/
+@media only screen and (max-width: 690px){
+    p{
+        padding-left: 5%;
+        font-size: 3vw;
+    }
+    .explanation button{
+        font-size: 2vh;
+        width: 25%;
+    }
+    #info{
+        width: 70%;
+    }
+}
 
