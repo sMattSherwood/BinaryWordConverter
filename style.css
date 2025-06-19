@@ -141,6 +141,12 @@ h1{
 .binaryOutput textArea::placeholder{
     color:green;
 }
+.binaryOutput button{
+    width: 10%;
+    height: 50%;
+    margin-top: 20%;
+    margin-left: 2%;
+}
 
 /*Media quries*/
 @media only screen and (max-width: 690px){
