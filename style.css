@@ -141,19 +141,24 @@ h1{
 .binaryOutput textArea::placeholder{
     color:green;
 }
-.binaryOutput button{
-    width: 15%;
-    height: 20%;
-    margin-top: 20%;
-    margin-left: 2%;
+.copyButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+.copyButton{
+    width: auto;
+    padding: 1%;
+    height: 50%;
+    margin-top: 2%;
+    margin-left: 37%;
     background-color: rgb(132, 0, 255);
     transition: background-color 0.7s;
     border-style: solid;
     border-radius: 8%;
-    font-size: 2vh;
+    font-size: 3vh;
     color: white;
 }
-.binaryOutput button:hover{
+.copyButton:hover{
     background-color: rgb(0, 126, 17);
     cursor: pointer;   
 }
@@ -166,7 +171,7 @@ h1{
     }
     .explanation button{
         font-size: 2vh;
-        width: 25%;
+        width: 30%;
     }
     #info{
         width: 70%;
@@ -174,9 +179,11 @@ h1{
     .textBoxContainer{
         gap: 5%;
     }
-    .binaryOutput button{
+    .copyButton{
+        margin-top: 7%;
+        margin-left: 50%;
         width: 20%;
-        font-size: 2vw;
+        font-size: 2vh;
     }
 }
 
